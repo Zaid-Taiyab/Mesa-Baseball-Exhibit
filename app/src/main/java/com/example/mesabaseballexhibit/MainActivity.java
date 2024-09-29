@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Ensure this matches your XML filename
+        setContentView(R.layout.activity_main);
 
         // Find buttons by ID
         Button triviaButton = findViewById(R.id.triviaChallengeButton);
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         Button highlightsButton = findViewById(R.id.historicalHighlightsButton);
 
         // Set listeners to navigate to respective activities
-        triviaButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TriviaActivity.class)));
+        triviaButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SelectDifficultyActivity.class))); // Update this
         playersButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerListActivity.class)));
         teamsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TeamListActivity.class)));
         highlightsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HistoricalHighlightsActivity.class)));

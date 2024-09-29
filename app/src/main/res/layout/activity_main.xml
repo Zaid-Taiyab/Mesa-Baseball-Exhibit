@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:gravity="center">
 
     <!-- Title of the exhibit -->
     <TextView
@@ -12,9 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Baseball Exhibit"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
         android:layout_gravity="center_horizontal"
         android:paddingBottom="20dp" />
 
@@ -23,79 +24,80 @@
         android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_gravity="center"
         android:layout_weight="1"
         android:columnCount="2"
-        android:rowCount="2"
         android:padding="10dp"
-        android:layout_gravity="center">
+        android:rowCount="2">
 
         <!-- Button 1: Trivia Challenge -->
         <Button
             android:id="@+id/triviaChallengeButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:text="Trivia Challenge"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:layout_margin="10dp"
             android:background="@drawable/rounded_button"
             android:elevation="4dp"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:text="Trivia Challenge"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
         <!-- Button 2: Iconic Players -->
         <Button
             android:id="@+id/iconicPlayersButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:text="Iconic Players"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:layout_margin="10dp"
             android:background="@drawable/rounded_button"
             android:elevation="4dp"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:text="Iconic Players"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
         <!-- Button 3: Iconic Teams -->
         <Button
             android:id="@+id/iconicTeamsButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:text="Iconic Teams"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:layout_margin="10dp"
             android:background="@drawable/rounded_button"
             android:elevation="4dp"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:text="Iconic Teams"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
         <!-- Button 4: Historical Highlights -->
         <Button
             android:id="@+id/historicalHighlightsButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:text="Historical Highlights"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:layout_margin="10dp"
             android:background="@drawable/rounded_button"
             android:elevation="4dp"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:text="Historical Highlights"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
     </GridLayout>
+
 </LinearLayout>
