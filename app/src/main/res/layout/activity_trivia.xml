@@ -7,11 +7,60 @@
     android:gravity="center"
     android:background="@drawable/background">
 
+    <!-- Trivia Question -->
     <TextView
+        android:id="@+id/questionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trivia Challenge"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/white" />
+        android:text="Sample Question"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:padding="16dp" />
+
+    <!-- RadioGroup for Multiple Choice Options -->
+    <RadioGroup
+        android:id="@+id/answerOptionsGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/option1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/option2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/option3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/option4RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 4"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitAnswerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#800000"
+        android:padding="12dp"
+        android:layout_marginTop="20dp" />
 </LinearLayout>
