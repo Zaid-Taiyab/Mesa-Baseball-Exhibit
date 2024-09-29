@@ -2,45 +2,27 @@ package com.example.mesabaseballexhibit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Sample data for the player list
-    String[] players = {"Player 1", "Player 2", "Player 3"};
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); // Ensure this matches your XML filename
 
-        // ListView playerListView = findViewById(R.id.playerListView);
-        // ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, players);
-        // playerListView.setAdapter(adapter);
-        Button triviaChallengeButton = findViewById(R.id.triviaChallengeButton);
-        Button iconicPlayersButton = findViewById(R.id.iconicPlayersButton);
-        Button iconicTeamsButton = findViewById(R.id.iconicTeamsButton);
-        Button historicalHighlightsButton = findViewById(R.id.historicalHighlightsButton);
+        // Find buttons by ID
+        Button triviaButton = findViewById(R.id.triviaChallengeButton);
+        Button playersButton = findViewById(R.id.iconicPlayersButton);
+        Button teamsButton = findViewById(R.id.iconicTeamsButton);
+        Button highlightsButton = findViewById(R.id.historicalHighlightsButton);
 
-        triviaChallengeButton.setOnClickListener(v -> {
-            // Add your intent or action here
-        });
-
-        iconicPlayersButton.setOnClickListener(v -> {
-            // Add your intent or action here
-        });
-
-        iconicTeamsButton.setOnClickListener(v -> {
-            // Add your intent or action here
-        });
-
-        historicalHighlightsButton.setOnClickListener(v -> {
-            // Add your intent or action here
-        });
+        // Set listeners to navigate to respective activities
+        triviaButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TriviaActivity.class)));
+        playersButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerListActivity.class)));
+        teamsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TeamListActivity.class)));
+        highlightsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HistoricalHighlightsActivity.class)));
     }
 }
 
