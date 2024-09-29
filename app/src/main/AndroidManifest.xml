@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MesaBaseballExhibit">
         <activity android:name=".PlayerDetailActivity" />
+        <activity android:name=".SelectDifficultyActivity" />
 
         <!-- Declare MainActivity here -->
         <activity android:name=".MainActivity"
