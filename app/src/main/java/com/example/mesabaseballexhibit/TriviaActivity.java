@@ -6,8 +6,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class TriviaActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class TriviaActivity extends AppCompatActivity {
     private List<TriviaQuestion> triviaQuestions;
     private int currentQuestionIndex = 0;
     private int score = 0;
+    private int totalQuestions = 5;  // Number of questions per quiz
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,40 +31,23 @@ public class TriviaActivity extends AppCompatActivity {
         answerOptionsGroup = findViewById(R.id.answerOptionsGroup);
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
 
-        // Initialize trivia questions
-        triviaQuestions = getTriviaQuestions();
+        // Fetch the difficulty level passed from the previous activity
+        String selectedDifficulty = getIntent().getStringExtra("difficulty");
+
+        // Provide a default value if no difficulty was passed
+        if (selectedDifficulty == null) {
+            selectedDifficulty = "easy";  // Default to "easy"
+        }
+
+        // Fetch random trivia questions based on difficulty
+        MuseumDatabaseHelper dbHelper = new MuseumDatabaseHelper(this);
+        triviaQuestions = dbHelper.getRandomTriviaQuestions(selectedDifficulty, totalQuestions);
 
         // Load the first question
         loadQuestion(currentQuestionIndex);
 
         // Set up submit button logic
         submitAnswerButton.setOnClickListener(v -> checkAnswer());
-    }
-
-    private List<TriviaQuestion> getTriviaQuestions() {
-        List<TriviaQuestion> questions = new ArrayList<>();
-
-        questions.add(new TriviaQuestion(
-                "Who was the MVP of the 2017 World Series?",
-                new String[]{"Jose Altuve", "George Springer", "Carlos Correa", "Justin Verlander"},
-                1
-        ));
-
-        questions.add(new TriviaQuestion(
-                "Which Arizona team won the 2001 World Series?",
-                new String[]{"Arizona Diamondbacks", "Phoenix Suns", "Arizona Cardinals", "Phoenix Coyotes"},
-                0
-        ));
-
-        questions.add(new TriviaQuestion(
-                "Which Arizona baseball player hit 602 career home runs?",
-                new String[]{"Paul Goldschmidt", "Luis Gonzalez", "Reggie Jackson", "Barry Bonds"},
-                1
-        ));
-
-        // Add more questions as needed
-
-        return questions;
     }
 
     private void loadQuestion(int questionIndex) {
@@ -84,9 +69,11 @@ public class TriviaActivity extends AppCompatActivity {
             // Clear previous selections
             answerOptionsGroup.clearCheck();
         } else {
-            // All questions answered, show final score
-            Toast.makeText(this, "Quiz Completed! Your Score: " + score + "/" + triviaQuestions.size(), Toast.LENGTH_LONG).show();
-            finish(); // End the activity, or you could restart the quiz
+            // All questions answered, show final score and percentage
+            double percentageCorrect = ((double) score / totalQuestions) * 100;
+            Toast.makeText(this, "Quiz Completed! You scored: " + score + "/" + totalQuestions +
+                    " (" + percentageCorrect + "% correct)", Toast.LENGTH_LONG).show();
+            finish();  // End the activity, or you could restart the quiz
         }
     }
 

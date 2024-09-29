@@ -17,12 +17,13 @@
         android:textColor="@android:color/white"
         android:padding="16dp" />
 
-    <!-- RadioGroup for Multiple Choice Options -->
+    <!-- Answer Options -->
     <RadioGroup
         android:id="@+id/answerOptionsGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
 
         <RadioButton
             android:id="@+id/option1RadioButton"
@@ -59,8 +60,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/holo_red_dark"
         android:textColor="@android:color/white"
-        android:backgroundTint="#800000"
-        android:padding="12dp"
-        android:layout_marginTop="20dp" />
+        android:padding="12dp"/>
 </LinearLayout>
