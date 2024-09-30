@@ -20,7 +20,7 @@ public class TriviaActivity extends AppCompatActivity {
     private List<TriviaQuestion> triviaQuestions;
     private int currentQuestionIndex = 0;
     private int score = 0;
-    private int totalQuestions = 5;  // Number of questions per quiz
+    private int totalQuestions = 10;  // Number of questions per quiz
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,13 +69,17 @@ public class TriviaActivity extends AppCompatActivity {
             // Clear previous selections
             answerOptionsGroup.clearCheck();
         } else {
-            // All questions answered, show final score and percentage
-            double percentageCorrect = ((double) score / totalQuestions) * 100;
-            Toast.makeText(this, "Quiz Completed! You scored: " + score + "/" + totalQuestions +
+            // Calculate the percentage based on the number of questions in the quiz
+            double percentageCorrect = ((double) score / triviaQuestions.size()) * 100;
+
+            // Display the score and percentage
+            Toast.makeText(this, "Quiz Completed! You scored: " + score + "/" + triviaQuestions.size() +
                     " (" + percentageCorrect + "% correct)", Toast.LENGTH_LONG).show();
+
             finish();  // End the activity, or you could restart the quiz
         }
     }
+
 
     private void checkAnswer() {
         // Get the selected RadioButton
