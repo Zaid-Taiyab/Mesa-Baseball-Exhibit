@@ -28,6 +28,7 @@
         android:layout_weight="1"
         android:columnCount="2"
         android:padding="10dp"
+        android:outlineAmbientShadowColor="@android:color/transparent"
         android:rowCount="2">
 
         <!-- Button 1: Trivia Challenge -->

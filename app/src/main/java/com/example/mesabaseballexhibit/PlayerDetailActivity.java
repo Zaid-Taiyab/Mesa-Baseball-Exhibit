@@ -27,3 +27,5 @@ public class PlayerDetailActivity extends AppCompatActivity {
         playerStatsTextView.setText("Player Stats:\n- Example stat 1\n- Example stat 2");
     }
 }
+
+
