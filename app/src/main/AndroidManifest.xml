@@ -11,22 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MesaBaseballExhibit">
-        <activity android:name=".PlayerDetailActivity" />
-        <activity android:name=".SelectDifficultyActivity" />
 
-        <!-- Declare MainActivity here -->
+        <!-- Declare MainActivity -->
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
+
+        <!-- Declare additional activities -->
+        <activity android:name=".PlayerDetailActivity" />
+        <activity android:name=".SelectDifficultyActivity" />
         <activity android:name=".TriviaActivity" />
         <activity android:name=".PlayerListActivity" />
         <activity android:name=".TeamListActivity" />
         <activity android:name=".HistoricalHighlightsActivity" />
-    </application>
 
+    </application>
 </manifest>
+
