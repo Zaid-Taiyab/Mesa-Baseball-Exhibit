@@ -99,6 +99,23 @@
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
+        <!-- Button 5: Timeline -->
+        <Button
+            android:id="@+id/timelineButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="Timeline"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
     </GridLayout>
 
 </LinearLayout>
