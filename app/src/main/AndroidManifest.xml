@@ -28,6 +28,7 @@
         <activity android:name=".PlayerListActivity" />
         <activity android:name=".TeamListActivity" />
         <activity android:name=".HistoricalHighlightsActivity" />
+        <activity android:name=".TimelineActivity"></activity>
 
     </application>
 </manifest>

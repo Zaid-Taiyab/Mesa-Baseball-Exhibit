@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
         Button playersButton = findViewById(R.id.iconicPlayersButton);
         Button teamsButton = findViewById(R.id.iconicTeamsButton);
         Button highlightsButton = findViewById(R.id.historicalHighlightsButton);
+        Button timelineButton = findViewById(R.id.timelineButton);
 
         // Set listeners to navigate to respective activities
+        timelineButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TimelineActivity.class)));
         triviaButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SelectDifficultyActivity.class))); // Update this
         playersButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerListActivity.class)));
         teamsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TeamListActivity.class)));
