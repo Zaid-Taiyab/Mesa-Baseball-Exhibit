@@ -1,4 +1,4 @@
-package com.example.mesabaseballexhibit;
+package com.example.mesabaseballexhibit.core;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import com.example.mesabaseballexhibit.features.trivia.TriviaQuestion;
 
 import java.util.ArrayList;
 import java.util.List;
