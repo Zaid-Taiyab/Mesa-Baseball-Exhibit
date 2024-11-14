@@ -24,13 +24,13 @@
         <activity android:name=".MainActivity" />
 
         <!-- Declare additional activities -->
-        <activity android:name=".PlayerDetailActivity" />
-        <activity android:name=".SelectDifficultyActivity" />
-        <activity android:name=".TriviaActivity" />
-        <activity android:name=".PlayerListActivity" />
-        <activity android:name=".TeamListActivity" />
-        <activity android:name=".HistoricalHighlightsActivity" />
-        <activity android:name=".TimelineActivity"></activity>
+        <activity android:name=".features.players.PlayerDetailActivity" />
+        <activity android:name=".features.trivia.SelectDifficultyActivity" />
+        <activity android:name=".features.trivia.TriviaActivity" />
+        <activity android:name=".features.players.PlayerListActivity" />
+        <activity android:name=".features.TeamListActivity" />
+        <activity android:name=".features.HistoricalHighlightsActivity" />
+        <activity android:name=".features.timeline.TimelineActivity"></activity>
 
     </application>
 </manifest>

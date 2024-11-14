@@ -1,4 +1,4 @@
-package com.example.mesabaseballexhibit;
+package com.example.mesabaseballexhibit.features.trivia;
 
 public class TriviaQuestion {
     private String question;
