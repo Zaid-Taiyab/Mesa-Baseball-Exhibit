@@ -10,6 +10,8 @@
         android:layout_height="match_parent"
         android:src="@drawable/flickrcomphotoskatie_moore13182392555"
         android:scaleType="centerCrop"
+        android:scaleX="1.4" <!-- Scale the width by 1.4x -->
+        android:scaleY="1.4" <!-- Scale the height by 1.4x -->
         android:contentDescription="@string/background_image_desc" />
 
     <!-- Title of the welcome screen -->
