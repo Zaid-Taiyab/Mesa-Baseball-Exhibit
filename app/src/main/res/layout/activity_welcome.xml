@@ -1,11 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/flickrcomphotoskatie_moore13182392555"
-    android:padding="16dp"
-    android:scaleX="1.0"
-    android:scaleY="1.4">
+    android:padding="16dp">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/flickrcomphotoskatie_moore13182392555"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_image_desc" />
 
     <!-- Title of the welcome screen -->
     <TextView
@@ -33,6 +38,4 @@
         android:text="Start"
         android:textColor="@android:color/black"
         android:textSize="20sp" />
-
 </RelativeLayout>
-
