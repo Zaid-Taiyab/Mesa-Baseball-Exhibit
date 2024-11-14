@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp">
@@ -13,17 +14,6 @@
         android:contentDescription="@string/background_image_desc" />
 
     <!-- Title of the welcome screen -->
-    <TextView
-        android:id="@+id/welcomeTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:paddingTop="40dp"
-        android:text="Welcome to the Mesa Historical Museum Baseball Exhibit!"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
 
     <!-- Button to navigate to MainActivity -->
     <Button
@@ -38,4 +28,11 @@
         android:text="Start"
         android:textColor="@android:color/black"
         android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:srcCompat="@drawable/logo" />
 </RelativeLayout>
