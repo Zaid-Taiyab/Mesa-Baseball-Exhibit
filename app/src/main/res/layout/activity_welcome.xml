@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="0dp">
 
     <!-- Background Image -->
     <ImageView
@@ -10,8 +10,6 @@
         android:layout_height="match_parent"
         android:src="@drawable/flickrcomphotoskatie_moore13182392555"
         android:scaleType="centerCrop"
-        android:scaleX="1.4"
-        android:scaleY="1.4"
         android:contentDescription="@string/background_image_desc" />
 
     <!-- Title of the welcome screen -->
