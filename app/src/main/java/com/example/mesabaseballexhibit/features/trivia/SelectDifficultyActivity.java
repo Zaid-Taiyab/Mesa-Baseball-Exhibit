@@ -1,4 +1,4 @@
-package com.example.mesabaseballexhibit;
+package com.example.mesabaseballexhibit.features.trivia;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.mesabaseballexhibit.R;
 
 public class SelectDifficultyActivity extends AppCompatActivity {
 

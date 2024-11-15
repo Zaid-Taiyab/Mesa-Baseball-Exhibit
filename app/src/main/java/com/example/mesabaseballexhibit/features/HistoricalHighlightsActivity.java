@@ -1,7 +1,9 @@
-package com.example.mesabaseballexhibit;
+package com.example.mesabaseballexhibit.features;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.mesabaseballexhibit.R;
 
 public class HistoricalHighlightsActivity extends AppCompatActivity {
     @Override

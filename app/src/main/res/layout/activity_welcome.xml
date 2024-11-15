@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@drawable/background">
+    android:padding="0dp">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/flickrcomphotoskatie_moore13182392555"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_image_desc" />
 
     <!-- Title of the welcome screen -->
-    <TextView
-        android:id="@+id/welcomeTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to the Mesa Historical Museum Baseball Exhibit!"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:paddingTop="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
     <!-- Button to navigate to MainActivity -->
     <Button
@@ -33,5 +29,10 @@
         android:textColor="@android:color/black"
         android:textSize="20sp" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:srcCompat="@drawable/logo" />
 </RelativeLayout>
-
