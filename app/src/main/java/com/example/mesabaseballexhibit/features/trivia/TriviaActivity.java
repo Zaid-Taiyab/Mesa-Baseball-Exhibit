@@ -1,4 +1,4 @@
-package com.example.mesabaseballexhibit;
+package com.example.mesabaseballexhibit.features.trivia;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.mesabaseballexhibit.core.MuseumDatabaseHelper;
+import com.example.mesabaseballexhibit.R;
 
 import java.util.List;
 

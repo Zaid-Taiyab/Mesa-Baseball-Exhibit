@@ -5,6 +5,12 @@ import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mesabaseballexhibit.features.HistoricalHighlightsActivity;
+import com.example.mesabaseballexhibit.features.players.PlayerListActivity;
+import com.example.mesabaseballexhibit.features.TeamListActivity;
+import com.example.mesabaseballexhibit.features.timeline.TimelineActivity;
+import com.example.mesabaseballexhibit.features.trivia.SelectDifficultyActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
