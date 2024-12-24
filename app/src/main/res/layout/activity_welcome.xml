@@ -13,10 +13,8 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/background_image_desc" />
 
-    <!-- Title of the welcome screen -->
-
     <!-- Button to navigate to MainActivity -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/startButton"
         android:layout_width="166dp"
         android:layout_height="wrap_content"
@@ -27,7 +25,8 @@
         android:padding="16dp"
         android:text="Start"
         android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
 
     <ImageView
         android:id="@+id/imageView"

@@ -10,6 +10,7 @@ import com.example.mesabaseballexhibit.features.players.PlayerListActivity;
 import com.example.mesabaseballexhibit.features.TeamListActivity;
 import com.example.mesabaseballexhibit.features.timeline.TimelineActivity;
 import com.example.mesabaseballexhibit.features.trivia.SelectDifficultyActivity;
+import com.example.mesabaseballexhibit.features.HallOfFameActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button teamsButton = findViewById(R.id.iconicTeamsButton);
         Button highlightsButton = findViewById(R.id.historicalHighlightsButton);
         Button timelineButton = findViewById(R.id.timelineButton);
+        Button hallOfFameButton = findViewById(R.id.hallOfFameButton);
 
         // Set listeners to navigate to respective activities
         timelineButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TimelineActivity.class)));
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         playersButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerListActivity.class)));
         teamsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TeamListActivity.class)));
         highlightsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HistoricalHighlightsActivity.class)));
+        hallOfFameButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HallOfFameActivity.class)));
     }
 }
 
