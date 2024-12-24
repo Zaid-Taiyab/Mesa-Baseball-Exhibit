@@ -116,6 +116,22 @@
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
+        <!-- Button 6: Timeline -->
+        <Button
+            android:id="@+id/hallOfFameButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="Hall of Fame"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
     </GridLayout>
 
 </LinearLayout>
