@@ -24,10 +24,9 @@
         <activity android:name=".MainActivity" />
 
         <!-- Declare additional activities -->
-        <activity android:name=".features.players.PlayerDetailActivity" />
         <activity android:name=".features.trivia.SelectDifficultyActivity" />
         <activity android:name=".features.trivia.TriviaActivity" />
-        <activity android:name=".features.players.PlayerListActivity" />
+        <activity android:name=".features.players.PlayerActivity" />
         <activity android:name=".features.TeamListActivity" />
         <activity android:name=".features.HistoricalHighlightsActivity" />
         <activity android:name=".features.timeline.TimelineActivity"/>
