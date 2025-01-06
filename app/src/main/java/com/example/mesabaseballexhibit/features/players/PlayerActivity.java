@@ -1,57 +1,43 @@
 package com.example.mesabaseballexhibit.features.players;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
+import android.view.ViewGroup;
+import android.view.LayoutInflater;
+import android.view.View;
 
 import com.example.mesabaseballexhibit.R;
 
-public class PlayerDetailActivity extends AppCompatActivity {
+public class PlayerActivity extends AppCompatActivity {
     private ViewPager2 viewPager;
     private LinearLayout indicatorsContainer;
-    // Add your image resources here
     private int[] images = {
             R.drawable.players1,
+            R.drawable.players2,
+            R.drawable.players3
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_player_detail);
+        setContentView(R.layout.activity_player);
 
-        // Retrieve the player name passed from MainActivity
-        String playerName = getIntent().getStringExtra("playerName");
-
-        TextView playerNameTextView = findViewById(R.id.playerNameTextView);
-        playerNameTextView.setText(playerName);
-
-        // Initialize ViewPager2 and indicators
         viewPager = findViewById(R.id.viewPager);
         indicatorsContainer = findViewById(R.id.indicatorsContainer);
 
-        // Set up the image slider
-        setupImageSlider();
-        setupIndicators();
-        setCurrentIndicator(0);
-
-        // Set placeholder stats for now
-        TextView playerStatsTextView = findViewById(R.id.playerStatsTextView);
-        playerStatsTextView.setText("Player Stats:\n- Example stat 1\n- Example stat 2");
-    }
-
-    private void setupImageSlider() {
         PlayerImageAdapter adapter = new PlayerImageAdapter(images);
         viewPager.setAdapter(adapter);
+
+        setupIndicators();
+        setCurrentIndicator(0);
 
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-                super.onPageSelected(position);
                 setCurrentIndicator(position);
             }
         });

@@ -6,6 +6,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mesabaseballexhibit.features.HistoricalHighlightsActivity;
+import com.example.mesabaseballexhibit.features.players.PlayerActivity;
 import com.example.mesabaseballexhibit.features.players.PlayerListActivity;
 import com.example.mesabaseballexhibit.features.TeamListActivity;
 import com.example.mesabaseballexhibit.features.timeline.TimelineActivity;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         // Set listeners to navigate to respective activities
         timelineButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TimelineActivity.class)));
         triviaButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SelectDifficultyActivity.class))); // Update this
-        playersButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerListActivity.class)));
+        playersButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerActivity.class)));
         teamsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TeamListActivity.class)));
         highlightsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HistoricalHighlightsActivity.class)));
         hallOfFameButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HallOfFameActivity.class)));
