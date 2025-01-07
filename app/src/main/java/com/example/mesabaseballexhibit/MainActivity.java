@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mesabaseballexhibit.features.HistoricalHighlightsActivity;
 import com.example.mesabaseballexhibit.features.players.PlayerActivity;
-import com.example.mesabaseballexhibit.features.players.PlayerListActivity;
 import com.example.mesabaseballexhibit.features.TeamListActivity;
 import com.example.mesabaseballexhibit.features.timeline.TimelineActivity;
 import com.example.mesabaseballexhibit.features.trivia.SelectDifficultyActivity;
