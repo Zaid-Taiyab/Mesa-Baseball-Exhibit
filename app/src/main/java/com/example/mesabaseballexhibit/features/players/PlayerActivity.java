@@ -18,7 +18,12 @@ public class PlayerActivity extends AppCompatActivity {
     private int[] images = {
             R.drawable.players1,
             R.drawable.players2,
-            R.drawable.players3
+            R.drawable.players3,
+            R.drawable.players4,
+            R.drawable.players5,
+            R.drawable.players6,
+            R.drawable.players7,
+            R.drawable.players8,
     };
 
     @Override
