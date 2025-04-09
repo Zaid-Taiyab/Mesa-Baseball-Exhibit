@@ -2,8 +2,9 @@ package com.example.mesabaseballexhibit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.mesabaseballexhibit.features.HistoricalHighlightsActivity;
 import com.example.mesabaseballexhibit.features.players.PlayerActivity;
@@ -19,21 +20,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find buttons by ID
-        Button triviaButton = findViewById(R.id.triviaChallengeButton);
-        Button playersButton = findViewById(R.id.iconicPlayersButton);
-        Button teamsButton = findViewById(R.id.iconicTeamsButton);
-        Button highlightsButton = findViewById(R.id.historicalHighlightsButton);
-        Button timelineButton = findViewById(R.id.timelineButton);
-        Button hallOfFameButton = findViewById(R.id.hallOfFameButton);
+        // Find cards by ID
+        CardView triviaCard = findViewById(R.id.triviaCard);
+        CardView playersCard = findViewById(R.id.playersCard);
+        CardView teamsCard = findViewById(R.id.teamsCard);
+        CardView highlightsCard = findViewById(R.id.highlightsCard);
+        CardView timelineCard = findViewById(R.id.timelineCard);
+        CardView hallOfFameCard = findViewById(R.id.hallOfFameCard);
 
-        // Set listeners to navigate to respective activities
-        timelineButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TimelineActivity.class)));
-        triviaButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SelectDifficultyActivity.class))); // Update this
-        playersButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerActivity.class)));
-        teamsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TeamListActivity.class)));
-        highlightsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HistoricalHighlightsActivity.class)));
-        hallOfFameButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HallOfFameActivity.class)));
+        // Set listeners for each card
+        triviaCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SelectDifficultyActivity.class)));
+        playersCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerActivity.class)));
+        teamsCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TeamListActivity.class)));
+        highlightsCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HistoricalHighlightsActivity.class)));
+        timelineCard.setOnClickListener(v-> startActivity(new Intent(MainActivity.this, TimelineActivity.class)));
+        hallOfFameCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HallOfFameActivity.class)));
     }
 }
 
