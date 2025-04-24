@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     android:background="@drawable/background3"
-    android:gravity="center">
+    android:padding="16dp">
 
-    <!-- Title of the exhibit -->
+    <!-- Title -->
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
@@ -19,175 +17,145 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="20dp" />
+        android:paddingBottom="16dp" />
 
-    <!-- Grid Layout for Cards -->
+    <!-- Grid of 2 columns and 3 rows -->
     <GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:columnCount="2"
-        android:padding="10dp"
-        android:rowCount="3">
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignMargins">
 
-        <!-- Trivia Challenge -->
+        <!-- Repeat this CardView for each card -->
         <androidx.cardview.widget.CardView
             android:id="@+id/triviaCard"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp">
+            android:layout_row="0"
+            android:layout_column="0"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#FFFF00">
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/trivia_card_image"
-                    android:contentDescription="Trivia Image" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Trivia Challenge"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:paddingTop="8dp" />
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:src="@drawable/trivia_card_image"
+                android:contentDescription="Trivia"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
         </androidx.cardview.widget.CardView>
 
-        <!-- Iconic Players -->
+        <!-- Repeat for the other 5 cards with different IDs and images -->
         <androidx.cardview.widget.CardView
             android:id="@+id/playersCard"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp">
+            android:layout_row="0"
+            android:layout_column="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#FFFF00">
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/iconic_players_card_image"
-                    android:contentDescription="Players Image" />
-
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:src="@drawable/iconic_players_card_image"
+                android:contentDescription="Players"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
         </androidx.cardview.widget.CardView>
 
-        <!-- More Cards for Teams, Highlights, Timeline, Hall of Fame -->
-
-        <!-- Iconic Teams -->
         <androidx.cardview.widget.CardView
             android:id="@+id/teamsCard"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp" android:gravity="center">
-                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/trivia_card_image" android:contentDescription="Teams Image" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Iconic Teams" android:textSize="18sp" android:textStyle="bold" android:gravity="center" android:paddingTop="8dp" />
-            </LinearLayout>
+            android:layout_row="1"
+            android:layout_column="0"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#FFFF00">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/trivia_card_image"
+                android:contentDescription="Teams"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
         </androidx.cardview.widget.CardView>
 
-        <!-- Historical Highlights -->
-        <androidx.cardview.widget.CardView android:id="@+id/highlightsCard" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6dp" app:cardCornerRadius="12dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp" android:gravity="center">
-                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/trivia_card_image" android:contentDescription="Highlights Image" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Historical Highlights" android:textSize="18sp" android:textStyle="bold" android:gravity="center" android:paddingTop="8dp" />
-            </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/highlightsCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#FFFF00">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/trivia_card_image"
+                android:contentDescription="Highlights"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
         </androidx.cardview.widget.CardView>
 
-        <!-- Iconic Timeline -->
         <androidx.cardview.widget.CardView
             android:id="@+id/timelineCard"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp">
+            android:layout_row="2"
+            android:layout_column="0"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#FFFF00">
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/trivia_card_image"
-                    android:contentDescription="Timeline Image" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Iconic Timeline"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:paddingTop="8dp" />
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:src="@drawable/trivia_card_image"
+                android:contentDescription="Timeline"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
         </androidx.cardview.widget.CardView>
 
-        <!-- Hall of Fame -->
         <androidx.cardview.widget.CardView
             android:id="@+id/hallOfFameCard"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp">
+            android:layout_row="2"
+            android:layout_column="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#FFFF00">
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/trivia_card_image"
-                    android:contentDescription="Hall of Fame Image" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hall of Fame"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:paddingTop="8dp" />
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:src="@drawable/trivia_card_image"
+                android:contentDescription="Hall of Fame"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
         </androidx.cardview.widget.CardView>
 
     </GridLayout>
