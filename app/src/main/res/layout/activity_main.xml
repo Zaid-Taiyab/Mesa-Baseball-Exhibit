@@ -124,12 +124,12 @@
             android:layout_column="1"
             app:cardElevation="4dp"
             app:cardCornerRadius="12dp"
-            app:cardBackgroundColor="#0066cc">
+            app:cardBackgroundColor="#4CBF4E">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/highlights_card_view"
+                android:src="@drawable/teams_highlights_card_view"
                 android:contentDescription="Highlights"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true" />
