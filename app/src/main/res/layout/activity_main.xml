@@ -124,7 +124,7 @@
             android:layout_column="1"
             app:cardElevation="4dp"
             app:cardCornerRadius="12dp"
-            app:cardBackgroundColor="#4CBF4E">
+            app:cardBackgroundColor="#4C9C4E">
 
             <ImageView
                 android:layout_width="match_parent"
