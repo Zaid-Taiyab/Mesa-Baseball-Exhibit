@@ -145,12 +145,12 @@
             android:layout_column="1"
             app:cardElevation="4dp"
             app:cardCornerRadius="12dp"
-            app:cardBackgroundColor="#8c1d40">
+            app:cardBackgroundColor="#701230">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/hof_card_view"
+                android:src="@drawable/team_hof_card_view"
                 android:contentDescription="Hall of Fame"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true" />
