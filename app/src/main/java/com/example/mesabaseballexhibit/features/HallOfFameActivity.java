@@ -1,74 +1,44 @@
 package com.example.mesabaseballexhibit.features;
 
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.viewpager2.widget.ViewPager2;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mesabaseballexhibit.R;
-import com.example.mesabaseballexhibit.features.players.PlayerImageAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HallOfFameActivity extends AppCompatActivity {
-    private ViewPager2 viewPager;
-    private LinearLayout indicatorsContainer;
-    private int[] images = {
-            R.drawable.teams1,
-            R.drawable.teams2,
-            R.drawable.teams3,
-            R.drawable.teams4,
-    };
+
+    RecyclerView recyclerView;
+    InducteeAdapter adapter;
+    List<Inductee> inductees;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_player);
+        setContentView(R.layout.activity_hall_of_fame);
 
-        viewPager = findViewById(R.id.viewPager);
-        indicatorsContainer = findViewById(R.id.indicatorsContainer);
+        recyclerView = findViewById(R.id.hofRecyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        PlayerImageAdapter adapter = new PlayerImageAdapter(images);
-        viewPager.setAdapter(adapter);
+        inductees = new ArrayList<>();
+        inductees.add(new Inductee(
+                "Dwight “Pat” Patterson",
+                "Mesa Rancher and Businessman",
+                "One of the Cactus League's biggest civic boosters, he is credited with bringing the Chicago Cubs to Mesa \n" +
+                        "in 1952 and then bringing them back to Mesa from Scottsdale in 1979. He was the first chairman of the \n" +
+                        "storied Hohokams civic club, created to pursue a spring training baseball team in 1946 and was selected \n" +
+                        "by Governor Rose Mofford to lead her task force to save spring training in the late 1980's.",
+                R.drawable.players1
+        ));
 
-        setupIndicators();
-        setCurrentIndicator(0);
+        // Add more inductees here...
 
-        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
-            @Override
-            public void onPageSelected(int position) {
-                setCurrentIndicator(position);
-            }
-        });
-    }
-
-    private void setupIndicators() {
-        ImageView[] indicators = new ImageView[images.length];
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT);
-        params.setMargins(8, 0, 8, 0);
-
-        for (int i = 0; i < indicators.length; i++) {
-            indicators[i] = new ImageView(this);
-            indicators[i].setImageDrawable(ContextCompat.getDrawable(this,
-                    R.drawable.indicator_inactive));
-            indicators[i].setLayoutParams(params);
-            indicatorsContainer.addView(indicators[i]);
-        }
-    }
-
-    private void setCurrentIndicator(int position) {
-        int childCount = indicatorsContainer.getChildCount();
-        for (int i = 0; i < childCount; i++) {
-            ImageView imageView = (ImageView) indicatorsContainer.getChildAt(i);
-            if (i == position) {
-                imageView.setImageDrawable(ContextCompat.getDrawable(this,
-                        R.drawable.indicator_active));
-            } else {
-                imageView.setImageDrawable(ContextCompat.getDrawable(this,
-                        R.drawable.indicator_inactive));
-            }
-        }
+        adapter = new InducteeAdapter(inductees);
+        recyclerView.setAdapter(adapter);
     }
 }
