@@ -3,12 +3,156 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E3F2FD"
     android:padding="16dp">
 
     <LinearLayout
         android:id="@+id/container"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E3F2FD">
 
+        <!-- Inductee Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_bg"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Centered Image with Original Size -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/dwight_patterson"
+                android:adjustViewBounds="true"
+                android:contentDescription="Dwight Pat Patterson Photo"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dwight 'Pat' Patterson"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mesa Rancher and Businessman"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credited with bringing the Cubs to Mesa in 1952 and again in 1979. Led civic efforts including Governor Mofford’s task force to save spring training in the late 1980s."
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- You can copy/paste the block above to create more inductee cards -->
+        <!-- Inductee Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_bg"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Centered Image with Original Size -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/dwight_patterson"
+                android:adjustViewBounds="true"
+                android:contentDescription="Dwight Pat Patterson Photo"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dwight 'Pat' Patterson"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mesa Rancher and Businessman"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credited with bringing the Cubs to Mesa in 1952 and again in 1979. Led civic efforts including Governor Mofford’s task force to save spring training in the late 1980s."
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- Inductee Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_bg"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Centered Image with Original Size -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/dwight_patterson"
+                android:adjustViewBounds="true"
+                android:contentDescription="Dwight Pat Patterson Photo"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dwight 'Pat' Patterson"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mesa Rancher and Businessman"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credited with bringing the Cubs to Mesa in 1952 and again in 1979. Led civic efforts including Governor Mofford’s task force to save spring training in the late 1980s."
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>
