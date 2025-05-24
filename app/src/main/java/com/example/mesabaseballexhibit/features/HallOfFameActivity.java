@@ -1,7 +1,12 @@
 package com.example.mesabaseballexhibit.features;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.mesabaseballexhibit.R;
 
 public class HallOfFameActivity extends AppCompatActivity {
@@ -9,6 +14,24 @@ public class HallOfFameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hall_of_fame);
-        // No dynamic logic needed if all inductee cards are in XML
+        setButtonListener(R.id.btn2014, 2014);
+        setButtonListener(R.id.btn2016, 2016);
+        setButtonListener(R.id.btn2017, 2017);
+        setButtonListener(R.id.btn2018, 2018);
+        setButtonListener(R.id.btn2019, 2019);
+        setButtonListener(R.id.btn2020, 2020);
+
+    }
+
+    private void setButtonListener(int id, int year) {
+        Button btn = findViewById(id);
+        btn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, InducteeListActivity.class);
+            intent.putExtra("YEAR", year);
+            startActivity(intent);
+        });
     }
 }
+
+
+
