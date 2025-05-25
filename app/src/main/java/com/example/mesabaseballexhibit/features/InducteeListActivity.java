@@ -26,8 +26,25 @@ public class InducteeListActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.inducteeRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        List<com.example.mesabaseballexhibit.features.Inductee> inductees = InducteeData.getInducteesForYear(year); // You define this
+        // 🔽 Enable scroll bar and keep it visible
+        recyclerView.setVerticalScrollBarEnabled(true);
+        recyclerView.setScrollbarFadingEnabled(false);  // Keeps it visible
+
+        // 🔽 Adapter and data
+        List<com.example.mesabaseballexhibit.features.Inductee> inductees = InducteeData.getInducteesForYear(year);
         recyclerView.setAdapter(new InducteeAdapter(inductees));
+
+        // 🔽 Scroll hint fade out
+        TextView scrollHint = findViewById(R.id.scrollHintText);
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                if (dy > 0 && scrollHint.getAlpha() > 0f) {
+                    scrollHint.animate().alpha(0f).setDuration(500).start();
+                }
+            }
+        });
     }
 }
+
 
