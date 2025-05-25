@@ -130,14 +130,14 @@ public class TimelineActivity extends AppCompatActivity {
 
             // Year text
             TextView yearText = new TextView(context);
-            yearText.setTextSize(28);
+            yearText.setTextSize(48);
             yearText.setTypeface(Typeface.DEFAULT_BOLD);
             yearText.setTextColor(0xFFFFFFFF);
             textOverlay.addView(yearText);
 
             // Description text
             TextView descriptionText = new TextView(context);
-            descriptionText.setTextSize(16);
+            descriptionText.setTextSize(26);
             descriptionText.setTextColor(0xFFFFFFFF);
             textOverlay.addView(descriptionText);
 
@@ -177,7 +177,7 @@ public class TimelineActivity extends AppCompatActivity {
         indicatorsContainer.removeAllViews();
         for (int i = 0; i < count; i++) {
             View dot = new View(this);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(20, 20);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(40, 40);
             params.setMargins(8, 0, 8, 0);
             dot.setLayoutParams(params);
             dot.setBackground(ContextCompat.getDrawable(this, R.drawable.indicator_inactive));
