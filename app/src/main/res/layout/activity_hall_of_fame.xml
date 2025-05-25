@@ -1,15 +1,86 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/hof_year_selector"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:columnCount="2"
+    android:rowCount="3"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignMargins"
+    android:gravity="center">
 
-    <Button android:id="@+id/btn2014" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hall of Fame 2014" />
-    <Button android:id="@+id/btn2016" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hall of Fame 2016" />
-    <Button android:id="@+id/btn2017" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hall of Fame 2017" />
-    <Button android:id="@+id/btn2018" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hall of Fame 2018" />
-    <Button android:id="@+id/btn2019" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hall of Fame 2019" />
-    <Button android:id="@+id/btn2020" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hall of Fame 2020" />
-</LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2014"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_columnWeight="1"
+        android:padding="16dp"
+        android:text="Hall of Fame 2014"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:backgroundTint="#f44336"
+        app:rippleColor="#22000000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2016"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_columnWeight="1"
+        android:padding="16dp"
+        android:text="Hall of Fame 2016"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:backgroundTint="#4caf50"
+        app:rippleColor="#22000000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2017"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_columnWeight="1"
+        android:padding="16dp"
+        android:text="Hall of Fame 2017"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:backgroundTint="#2196f3"
+        app:rippleColor="#22000000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2018"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_columnWeight="1"
+        android:padding="16dp"
+        android:text="Hall of Fame 2018"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:backgroundTint="#ff9800"
+        app:rippleColor="#22000000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2019"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_columnWeight="1"
+        android:padding="16dp"
+        android:text="Hall of Fame 2019"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:backgroundTint="#9c27b0"
+        app:rippleColor="#22000000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2020"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_columnWeight="1"
+        android:padding="16dp"
+        android:text="Hall of Fame 2020"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:backgroundTint="#795548"
+        app:rippleColor="#22000000" />
+
+</GridLayout>
