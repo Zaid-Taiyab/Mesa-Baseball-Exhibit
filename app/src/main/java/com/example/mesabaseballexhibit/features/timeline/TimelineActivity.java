@@ -48,15 +48,15 @@ public class TimelineActivity extends AppCompatActivity {
         indicatorsContainer = new LinearLayout(this);
         indicatorsContainer.setOrientation(LinearLayout.HORIZONTAL);
         indicatorsContainer.setGravity(Gravity.CENTER);
-        indicatorsContainer.setPadding(0, 16, 0, 32);
+        indicatorsContainer.setPadding(0, 8, 0, 8);
         root.addView(indicatorsContainer);
 
         setContentView(root);
 
         // Timeline data
         List<TimelineItem> items = new ArrayList<>();
-        items.add(new TimelineItem("1929", "The first spring training game was played in Arizona, when the Detroit Tigers hosted the Pittsburgh Pirates at Phoenix.", R.drawable.original_time));
-        items.add(new TimelineItem("1947", "Horace Stoneham of the Giants and Bill Veeck of the Indians were instrumental in bringing a spring training game to Arizona.", R.drawable.horace_stoneham));
+        items.add(new TimelineItem("1929", "The first spring training game was played in Arizona, when the Detroit Tigers hosted the Pittsburgh Pirates at Phoenix.", R.drawable.timeline_background));
+        items.add(new TimelineItem("1947", "Horace Stoneham of the Giants and Bill Veeck of the Indians were instrumental in bringing a spring training game to Arizona.", R.drawable.timeline2));
         items.add(new TimelineItem("1952", "The Chicago Cubs became Arizona’s third Cactus League team when they moved from their spring training home on Catalina Island to Mesa’s Rendezvous Park.", R.drawable.teams2));
         items.add(new TimelineItem("1998", "Cactus League membership grows to 10 teams as the expansion Arizona Diamondbacks and Chicago White Sox join the league.", R.drawable.teams4));
         items.add(new TimelineItem("2008", "The Cactus League can now boast it has half of all Major League Baseball teams training in Arizona as the league membership reaches 15 teams.", R.drawable.teams3));
@@ -110,19 +110,25 @@ public class TimelineActivity extends AppCompatActivity {
             layout.setPadding(32, 32, 32, 32);
 
             // Background image
+            // Background image
             ImageView imageView = new ImageView(context);
-            imageView.setLayoutParams(new LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams imageParams = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
-                    0, 1
-            ));
+                    dpToPx(context, 480)  // Bigger image height
+            );
+            imageParams.topMargin = dpToPx(context, 16);  // Adds space at the top
+            imageView.setLayoutParams(imageParams);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageView.setAdjustViewBounds(true);
             layout.addView(imageView);
+
+
 
             // Overlay text container
             LinearLayout textOverlay = new LinearLayout(context);
             textOverlay.setOrientation(LinearLayout.VERTICAL);
             textOverlay.setBackgroundColor(0xAA000000); // semi-transparent black
-            textOverlay.setPadding(24, 24, 24, 24);
+            textOverlay.setPadding(16, 16, 16, 16);
             textOverlay.setLayoutParams(new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
@@ -171,6 +177,10 @@ public class TimelineActivity extends AppCompatActivity {
                 this.descriptionText = descriptionText;
             }
         }
+    }
+    private static int dpToPx(Context context, int dp) {
+        float density = context.getResources().getDisplayMetrics().density;
+        return Math.round(dp * density);
     }
 
     private void setupIndicators(int count) {
