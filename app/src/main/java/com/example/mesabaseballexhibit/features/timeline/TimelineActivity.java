@@ -55,11 +55,11 @@ public class TimelineActivity extends AppCompatActivity {
 
         // Timeline data
         List<TimelineItem> items = new ArrayList<>();
-        items.add(new TimelineItem("1929", "The first spring training game was played in Arizona, when the Detroit Tigers hosted the Pittsburgh Pirates at Phoenix.", R.drawable.timeline_background));
-        items.add(new TimelineItem("1947", "Horace Stoneham of the Giants and Bill Veeck of the Indians were instrumental in bringing a spring training game to Arizona.", R.drawable.timeline_background));
-        items.add(new TimelineItem("1952", "The Chicago Cubs became Arizona’s third Cactus League team when they moved from their spring training home on Catalina Island to Mesa’s Rendezvous Park.", R.drawable.timeline_background));
-        items.add(new TimelineItem("1998", "Cactus League membership grows to 10 teams as the expansion Arizona Diamondbacks and Chicago White Sox join the league.", R.drawable.timeline_background));
-        items.add(new TimelineItem("2008", "The Cactus League can now boast it has half of all Major League Baseball teams training in Arizona as the league membership reaches 15 teams.", R.drawable.timeline_background));
+        items.add(new TimelineItem("1929", "The first spring training game was played in Arizona, when the Detroit Tigers hosted the Pittsburgh Pirates at Phoenix.", R.drawable.original_time));
+        items.add(new TimelineItem("1947", "Horace Stoneham of the Giants and Bill Veeck of the Indians were instrumental in bringing a spring training game to Arizona.", R.drawable.horace_stoneham));
+        items.add(new TimelineItem("1952", "The Chicago Cubs became Arizona’s third Cactus League team when they moved from their spring training home on Catalina Island to Mesa’s Rendezvous Park.", R.drawable.teams2));
+        items.add(new TimelineItem("1998", "Cactus League membership grows to 10 teams as the expansion Arizona Diamondbacks and Chicago White Sox join the league.", R.drawable.teams4));
+        items.add(new TimelineItem("2008", "The Cactus League can now boast it has half of all Major League Baseball teams training in Arizona as the league membership reaches 15 teams.", R.drawable.teams3));
 
         // Adapter
         viewPager.setAdapter(new TimelineAdapter(items, this));
