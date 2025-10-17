@@ -15,61 +15,61 @@ public class InducteeData {
             list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
                     "Horace Stoneham",
                     "Owner, New York/San Francisco Giants, 1936 - 1976",
-                    "Horace Stoneham is credited with helping to start the Cactus League when he moved his team to Phoenix\n" +
-                    "from Florida in 1947. Himself the owner of a winter home in Phoenix at the time, Stoneham also swapped\n" +
-                    "spring camps with Del Webb in 1951, when Mr. Webb proposed bringing his New York Yankees to the\n" +
-                    "\n" +
-                    "Cactus League for a season of baseball and selling homes. Stoneham's team spent more than two dec-\n" +
-                    "ades visiting the Buckhorn Baths and Mineral Springs in Mesa leaving a rich trail of spring training history\n" +
-                    "\n" +
+                    "Horace Stoneham is credited with helping to start the Cactus League when he moved his team to Phoenix" +
+                    "from Florida in 1947. Himself the owner of a winter home in Phoenix at the time, Stoneham also swapped" +
+                    "spring camps with Del Webb in 1951, when Mr. Webb proposed bringing his New York Yankees to the" +
+                    "" +
+                    "Cactus League for a season of baseball and selling homes. Stoneham's team spent more than two dec-" +
+                    "ades visiting the Buckhorn Baths and Mineral Springs in Mesa leaving a rich trail of spring training history" +
+                    "" +
                     "and memories that continue to amaze fans today."));
             list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
                     "Bill Veeck, Jr., 1946 - 1949",
                     "Owner, Cleveland Indians",
-                    "Bill Veeck, Jr. is credited with helping to start the Cactus League when he moved his team to Tucson\n" +
-                    "from Florida in 1947. Urged by Arizona State Senator Hiram Corbett of Tucson, Veeck wanted to move\n" +
-                    "his newly acquired team to be near his Southern Arizona guest ranch. He was able to accomplish his\n" +
+                    "Bill Veeck, Jr. is credited with helping to start the Cactus League when he moved his team to Tucson" +
+                    "from Florida in 1947. Urged by Arizona State Senator Hiram Corbett of Tucson, Veeck wanted to move" +
+                    "his newly acquired team to be near his Southern Arizona guest ranch. He was able to accomplish his" +
                     "goal when he found another owner willing to join him in the desert, N.Y. Giants owner Horace Stoneham."));
             list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
                     "Hon. Rose Mofford",
                     "Arizona Governor, 1988 - 1991",
-                    "Former Arizona Governor Rose Mofford was in the right place at the right time when it came to the task of\n" +
-                    "saving spring training baseball in Arizona. Florida interests were known to have contacted every team that\n" +
-                    "trained in Arizona at the time, but it was the threat of losing the Chicago Cubs and Cleveland Indians that\n" +
-                    "caused the most concern. In 1988, Governor Mofford, herself a former All-American softball player with\n" +
-                    "the Cantaloupe Queens, appointed a task force to study ways to keep teams training in Arizona. The task\n" +
-                    "force's work led to retention of the teams already here, the addition of new teams and an explosion in fan\n" +
-                    "attendance. Governor Mofford saved spring training and cemented the Cactus League as a fixture in the\n" +
+                    "Former Arizona Governor Rose Mofford was in the right place at the right time when it came to the task of" +
+                    "saving spring training baseball in Arizona. Florida interests were known to have contacted every team that" +
+                    "trained in Arizona at the time, but it was the threat of losing the Chicago Cubs and Cleveland Indians that" +
+                    "caused the most concern. In 1988, Governor Mofford, herself a former All-American softball player with" +
+                    "the Cantaloupe Queens, appointed a task force to study ways to keep teams training in Arizona. The task" +
+                    "force's work led to retention of the teams already here, the addition of new teams and an explosion in fan" +
+                    "attendance. Governor Mofford saved spring training and cemented the Cactus League as a fixture in the" +
                     "state."));
             list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
                     "Ted and Alice Sliger",
                     "Owners of the Buckhorn Baths, Mesa, AZ, 1935 - 2010",
-                    "When their gas station burned down in 1935, the couple purchased ten acres of land at the northwest cor-\n" +
-                    "ner of Apache Trail and Recker Road then located miles east of Mesa. While digging a well, they discov-\n" +
-                    "ered a mineral spring that spurred the development of a series of small bathhouses, complete with a Ro-\n" +
-                    "man style bath and cooling room. The resort quickly became a favorite pre-Spring Training ritual for select\n" +
-                    "\n" +
+                    "When their gas station burned down in 1935, the couple purchased ten acres of land at the northwest cor-" +
+                    "ner of Apache Trail and Recker Road then located miles east of Mesa. While digging a well, they discov-" +
+                    "ered a mineral spring that spurred the development of a series of small bathhouses, complete with a Ro-" +
+                    "man style bath and cooling room. The resort quickly became a favorite pre-Spring Training ritual for select" +
+                    "" +
                     "members of the New York and San Francisco Giants and other baseball celebrities over the years."));
             list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
                     "Hiram “Hi” Corbett",
                     "Arizona State Senator, Tucson, AZ, 1953 - 1964",
-                    "Hi Corbett was a Tucson native who is credited with helping to convince Bill Veeck to bring his Cleveland\n" +
-                            "Indians to Southern Arizona for spring training, giving rise to the Cactus League. Corbett was an amateur\n" +
-                            "golfer who organized Tucson's first professional golf tournament, was President of the Texas Baseball\n" +
-                            "\n" +
-                            "League, and served his community in the Arizona State Senate. The ballpark that played host to the Indi-\n" +
+                    "Hi Corbett was a Tucson native who is credited with helping to convince Bill Veeck to bring his Cleveland" +
+                            "Indians to Southern Arizona for spring training, giving rise to the Cactus League. Corbett was an amateur" +
+                            "golfer who organized Tucson's first professional golf tournament, was President of the Texas Baseball" +
+                            "" +
+                            "League, and served his community in the Arizona State Senate. The ballpark that played host to the Indi-" +
                             "ans (and ultimately the expansion of the Colorado Rockies) was named after him in 1951."));
             }
         if (year == 2016) {
             list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
                     "Dell Webb",
                     "Co-Owner, New York Yankees 1947-1964",
-            "Del Webb is one of the most prominent names in Cactus League history. A lifelong fan of baseball,\n" +
-                    "Webb parlayed his success as the president of the Phoenix-based Del Webb Construction Co. into\n" +
-                    "\n" +
-                    "co-ownership of the Yankees. Del Webb is credited with one of the most interesting trades in base-\n" +
-                    "ball history. In 1951, Webb convinced New York Giants owner Horace Stoneham to swap spring\n" +
-                    "\n" +
+            "Del Webb is one of the most prominent names in Cactus League history. A lifelong fan of baseball," +
+                    "Webb parlayed his success as the president of the Phoenix-based Del Webb Construction Co. into" +
+                    "" +
+                    "co-ownership of the Yankees. Del Webb is credited with one of the most interesting trades in base-" +
+                    "ball history. In 1951, Webb convinced New York Giants owner Horace Stoneham to swap spring" +
+                    "" +
                     "training sites for a single year, sending the Giants to Florida and the Yankees to the original Phoenix\n" +
                     "Municipal Stadium. The Yankees’ were the defending World Champions that year, with a lineup that\n" +
                     "included Joe Dimaggio in his last season, Mickey Mantle and Yogi Berra, under the management of\n" +
