@@ -12,25 +12,25 @@ public class InducteeData {
                     "Dwight 'Pat' Patterson",
                     "Mesa Rancher and Businessman",
                     "One of the Cactus League's biggest civic boosters, he is credited with bringing the Chicago Cubs to Mesa in 1952 and then bringing them back to Mesa from Scottsdale in 1979. He was the first chairman of the storied Hohokams civic club, created to pursue a spring training baseball team in 1946 and was selected by Governor Rose Mofford to lead her task force to save spring training in the late 1980's."));
-            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.horace_stoneham,
                     "Horace Stoneham",
                     "Owner, New York/San Francisco Giants, 1936 - 1976",
                     "Horace Stoneham is credited with helping to start the Cactus League when he moved his team to Phoenix from Florida in 1947. Himself the owner of a winter home in Phoenix at the time, Stoneham also swapped\n" +
                     "spring camps with Del Webb in 1951, when Mr. Webb proposed bringing his New York Yankees to the Cactus League for a season of baseball and selling homes. Stoneham's team spent more than two dec-\n" +
                     "ades visiting the Buckhorn Baths and Mineral Springs in Mesa leaving a rich trail of spring training historyand memories that continue to amaze fans today."));
-            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.bill_veeck_jr,
                     "Bill Veeck, Jr., 1946 - 1949",
                     "Owner, Cleveland Indians",
                     "Bill Veeck, Jr. is credited with helping to start the Cactus League when he moved his team to Tucson from Florida in 1947. Urged by Arizona State Senator Hiram Corbett of Tucson, Veeck wanted to move his newly acquired team to be near his Southern Arizona guest ranch. He was able to accomplish his goal when he found another owner willing to join him in the desert, N.Y. Giants owner Horace Stoneham."));
-            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.hon_rose_mofford,
                     "Hon. Rose Mofford",
                     "Arizona Governor, 1988 - 1991",
                     "Former Arizona Governor Rose Mofford was in the right place at the right time when it came to the task of saving spring training baseball in Arizona. Florida interests were known to have contacted every team that trained in Arizona at the time, but it was the threat of losing the Chicago Cubs and Cleveland Indians that caused the most concern. In 1988, Governor Mofford, herself a former All-American softball player with the Cantaloupe Queens, appointed a task force to study ways to keep teams training in Arizona. The task force's work led to retention of the teams already here, the addition of new teams and an explosion in fan attendance. Governor Mofford saved spring training and cemented the Cactus League as a fixture in the state."));
-            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.ted_and_alice_sliger,
                     "Ted and Alice Sliger",
                     "Owners of the Buckhorn Baths, Mesa, AZ, 1935 - 2010",
                     "When their gas station burned down in 1935, the couple purchased ten acres of land at the northwest corner of Apache Trail and Recker Road then located miles east of Mesa. While digging a well, they discovered a mineral spring that spurred the development of a series of small bathhouses, complete with a Roman style bath and cooling room. The resort quickly became a favorite pre-Spring Training ritual for select members of the New York and San Francisco Giants and other baseball celebrities over the years."));
-            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dwight_patterson,
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.hiram_hi_corbett,
                     "Hiram “Hi” Corbett",
                     "Arizona State Senator, Tucson, AZ, 1953 - 1964",
                     "Hi Corbett was a Tucson native who is credited with helping to convince Bill Veeck to bring his Cleveland Indians to Southern Arizona for spring training, giving rise to the Cactus League. Corbett was an amateur golfer who organized Tucson's first professional golf tournament, was President of the Texas Baseball eague, and served his community in the Arizona State Senate. The ballpark that played host to the Indi ans (and ultimately the expansion of the Colorado Rockies) was named after him in 1951."));
