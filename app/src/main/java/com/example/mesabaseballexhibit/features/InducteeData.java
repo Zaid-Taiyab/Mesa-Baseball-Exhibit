@@ -30,7 +30,7 @@ public class InducteeData {
                     "Ted and Alice Sliger",
                     "Owners of the Buckhorn Baths, Mesa, AZ, 1935 - 2010",
                     "When their gas station burned down in 1935, the couple purchased ten acres of land at the northwest corner of Apache Trail and Recker Road then located miles east of Mesa. While digging a well, they discovered a mineral spring that spurred the development of a series of small bathhouses, complete with a Roman style bath and cooling room. The resort quickly became a favorite pre-Spring Training ritual for select members of the New York and San Francisco Giants and other baseball celebrities over the years."));
-            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.hiram_hi_corbett,
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.hiram_corbett,
                     "Hiram “Hi” Corbett",
                     "Arizona State Senator, Tucson, AZ, 1953 - 1964",
                     "Hi Corbett was a Tucson native who is credited with helping to convince Bill Veeck to bring his Cleveland Indians to Southern Arizona for spring training, giving rise to the Cactus League. Corbett was an amateur golfer who organized Tucson's first professional golf tournament, was President of the Texas Baseball eague, and served his community in the Arizona State Senate. The ballpark that played host to the Indi ans (and ultimately the expansion of the Colorado Rockies) was named after him in 1951."));
