@@ -129,7 +129,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/teams_highlights_card_view"
+                android:src="@drawable/trivia_card_image"
                 android:contentDescription="Highlights"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true" />
