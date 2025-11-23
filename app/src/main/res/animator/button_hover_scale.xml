@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- When pressed -->
+    <item android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:valueTo="0.985"
+                android:duration="150"/>
+
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:valueTo="0.985"
+                android:duration="150"/>
+
+            <objectAnimator
+                android:propertyName="alpha"
+                android:valueTo="0.9"
+                android:duration="150"/>
+        </set>
+    </item>
+
+    <!-- Default (idle with subtle pulse) -->
+    <item>
+        <set>
+            <!-- base state -->
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:valueFrom="1"
+                android:valueTo="1.01"
+                android:duration="1000"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"/>
+
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:valueFrom="1"
+                android:valueTo="1.01"
+                android:duration="1000"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"/>
+
+            <objectAnimator
+                android:propertyName="alpha"
+                android:valueFrom="1"
+                android:valueTo="0.96"
+                android:duration="1000"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"/>
+        </set>
+    </item>
+
+</selector>
