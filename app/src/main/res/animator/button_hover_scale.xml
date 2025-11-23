@@ -27,16 +27,16 @@
             <!-- base state -->
             <objectAnimator
                 android:propertyName="scaleX"
-                android:valueFrom="1"
-                android:valueTo="1.01"
+                android:valueFrom="1.01"
+                android:valueTo="0.96"
                 android:duration="1000"
                 android:repeatCount="infinite"
                 android:repeatMode="reverse"/>
 
             <objectAnimator
                 android:propertyName="scaleY"
-                android:valueFrom="1"
-                android:valueTo="1.01"
+                android:valueFrom="1.01"
+                android:valueTo="0.96"
                 android:duration="1000"
                 android:repeatCount="infinite"
                 android:repeatMode="reverse"/>
