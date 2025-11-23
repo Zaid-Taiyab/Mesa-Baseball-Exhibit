@@ -1,58 +1,48 @@
+<!-- activity_welcome.xml (Updated) -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <!-- Background -->
+
+
+    <!-- Logo top-left -->
+
+
+    <!-- Bat on ground, centered horizontally, large and straight -->
+
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/flickrcomphotoskatie_moore13182392555"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/background_image_desc" />
+        android:src="@drawable/mainbackground" />
 
-    <!-- Logo -->
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:adjustViewBounds="true"
         android:src="@drawable/logo" />
 
-    <!-- Bat -->
     <ImageView
-        android:id="@+id/batImage"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:src="@drawable/batimage"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
-        android:clickable="true"
-        android:focusable="true" />
+    android:id="@+id/batImage"
+    android:layout_width="650dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="350dp"
+    android:layout_marginBottom="-440dp"
+    android:adjustViewBounds="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:rotation="-52"
+    android:src="@drawable/batimage"
+    android:padding="20dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless" />
 
-    <!-- Ball -->
-    <ImageView
-        android:id="@+id/ballImage"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="32dp"
-        android:src="@drawable/baseball_image"
-        android:adjustViewBounds="true" />
 
-    <!-- Kitbag in center -->
-    <ImageView
-        android:id="@+id/bagImage"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/kitbag" />
 </RelativeLayout>
-
