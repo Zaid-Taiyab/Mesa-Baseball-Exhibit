@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#800000"
     android:padding="24dp">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Welcome to the Cactus League Hall of Fame!\n\nClick on each year below to explore the inductees!\nDiscover the incredible stories of Mesa's baseball legends,\nfrom the 2014 Inaugural Class to the most recent honorees."
-        android:textColor="#E0E0E0"
+        android:textColor="#d4af37"
         android:textSize="28sp"
         android:lineSpacingExtra="6dp"
         android:fontFamily="sans-serif-medium"
@@ -38,14 +38,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2014"
-            android:textColor="#ECE7DC"
+            android:textColor="#d4af37"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:backgroundTint="#f44336"
+            app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#FFFFFF"
+            app:strokeColor="#d4af37"
             app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -55,14 +55,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2016"
-            android:textColor="#ECE7DC"
+            android:textColor="#d4af37"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:backgroundTint="#4caf60"
+            app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#FFFFFF"
+            app:strokeColor="#d4af37"
             app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -72,14 +72,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2017"
-            android:textColor="#ECE7DC"
+            android:textColor="#d4af37"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:backgroundTint="#2196f3"
+            app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#FFFFFF"
+            app:strokeColor="#d4af37"
             app:strokeWidth="1dp" />
 
 
@@ -90,14 +90,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2018"
-            android:textColor="#ECE7DC"
+            android:textColor="#d4af37"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:backgroundTint="#ff9800"
+            app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#FFFFFF"
+            app:strokeColor="#d4af37"
             app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -107,14 +107,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2019"
-            android:textColor="#ECE7DC"
+            android:textColor="#d4af37"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:backgroundTint="#9c27b0"
+            app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#FFFFFF"
+            app:strokeColor="#d4af37"
             app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -124,14 +124,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2020"
-            android:textColor="#ECE7DC"
+            android:textColor="#d4af37"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:backgroundTint="#795548"
+            app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#FFFFFF"
+            app:strokeColor="#d4af37"
             app:strokeWidth="1dp" />
 
 </GridLayout>
