@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:adjustViewBounds="true"
-        android:background="#d8a4af"
+        android:background="#f8d6d1"
         android:contentDescription="Inductee Photo"
         android:layout_marginBottom="12dp" />
 
@@ -24,7 +24,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#4a1c28"
-        android:background="#d8a4af"
+        android:background="#f8d6d1"
         android:layout_marginBottom="4dp" />
 
     <TextView
@@ -34,7 +34,7 @@
         android:textStyle="italic"
         android:textSize="16sp"
         android:textColor="#4a1c28"
-        android:background="#d8a4af"
+        android:background="#f8d6d1"
         android:layout_marginBottom="8dp" />
 
     <TextView
@@ -43,6 +43,6 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="#212121"
-        android:background="#d8a4af"
+        android:background="#f8d6d1"
         android:lineSpacingExtra="4dp" />
 </LinearLayout>
