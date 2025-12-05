@@ -21,7 +21,7 @@
             android:id="@+id/factHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#d4af37"
+            android:textColor="#800000"
             android:textSize="20sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"/>
@@ -30,7 +30,7 @@
             android:id="@+id/factContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#d4af37"
+            android:textColor="#4b0082"
             android:textSize="16sp"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
