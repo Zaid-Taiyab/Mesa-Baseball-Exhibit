@@ -15,7 +15,8 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="#333333"
+            android:textColor="#ffd700"
+            android:gravity="center"
             android:layout_marginBottom="8dp" />
 
         <androidx.recyclerview.widget.RecyclerView

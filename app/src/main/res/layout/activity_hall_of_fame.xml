@@ -38,14 +38,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2014"
-            android:textColor="#d4af37"
+            android:textColor="#800000"
             android:textSize="28sp"
             android:textStyle="bold"
             app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#d4af37"
+            app:strokeColor="#800000"
             app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -55,14 +55,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2016"
-            android:textColor="#d4af37"
+            android:textColor="#800000"
             android:textSize="28sp"
             android:textStyle="bold"
             app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#d4af37"
+            app:strokeColor="#800000"
             app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -72,14 +72,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2017"
-            android:textColor="#d4af37"
+            android:textColor="#800000"
             android:textSize="28sp"
             android:textStyle="bold"
             app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#d4af37"
+            app:strokeColor="#800000"
             app:strokeWidth="1dp" />
 
 
@@ -90,14 +90,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2018"
-            android:textColor="#d4af37"
+            android:textColor="#800000"
             android:textSize="28sp"
             android:textStyle="bold"
             app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#d4af37"
+            app:strokeColor="#800000"
             app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -107,14 +107,14 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2019"
-            android:textColor="#d4af37"
+            android:textColor="#800000"
             android:textSize="28sp"
             android:textStyle="bold"
             app:backgroundTint="#f8d6d1"
             app:rippleColor="#22000000"
             app:cornerRadius="24dp"
             app:elevation="6dp"
-            app:strokeColor="#d4af37"
+            app:strokeColor="#800000"
             app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -124,7 +124,7 @@
             android:layout_columnWeight="1"
             android:padding="16dp"
             android:text="Class of 2020"
-            android:textColor="#d4af37"
+            android:textColor="#800000"
             android:textSize="28sp"
             android:textStyle="bold"
             app:backgroundTint="#f8d6d1"
