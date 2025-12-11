@@ -31,7 +31,7 @@ public class TriviaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia);
         MaterialButton btnExit = findViewById(R.id.btnExit);
-        btnExit.setOnClickListener(v -> onBackPressed());
+        btnExit.setOnClickListener(v -> finish());
 
         questionTextView = findViewById(R.id.questionTextView);
         answerOptionsGroup = findViewById(R.id.answerOptionsGroup);

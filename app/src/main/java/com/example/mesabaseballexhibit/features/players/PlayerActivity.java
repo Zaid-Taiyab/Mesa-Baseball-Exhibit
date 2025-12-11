@@ -1,5 +1,6 @@
 package com.example.mesabaseballexhibit.features.players;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -32,10 +33,10 @@ public class PlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
         MaterialButton btnExit = findViewById(R.id.btnExit);
-        btnExit.setOnClickListener(v -> onBackPressed());
+        btnExit.setOnClickListener(v -> finish());
         viewPager = findViewById(R.id.viewPager);
         indicatorsContainer = findViewById(R.id.indicatorsContainer);
-
+        indicatorsContainer.setBackgroundColor(Color.parseColor("#66000000"));
         PlayerImageAdapter adapter = new PlayerImageAdapter(images);
         viewPager.setAdapter(adapter);
 
@@ -55,7 +56,7 @@ public class PlayerActivity extends AppCompatActivity {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT);
-        params.setMargins(30, 50, 30, 50);
+        params.setMargins(30, 25, 30, 25);
 
         for (int i = 0; i < indicators.length; i++) {
             indicators[i] = new ImageView(this);
