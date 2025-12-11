@@ -14,7 +14,7 @@
     <!-- Credits Button (Top-left) -->
     <Button
         android:id="@+id/btnCredits"
-        android:layout_width="105dp"
+        android:layout_width="120dp"
         android:layout_height="75dp"
         android:text="Credits"
         android:textSize="16sp"

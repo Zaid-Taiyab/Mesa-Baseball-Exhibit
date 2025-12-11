@@ -54,7 +54,7 @@
             android:layout_column="0"
             app:cardElevation="6dp"
             app:cardCornerRadius="14dp"
-            android:stateListAnimator="@animator/button_hover_scale"
+             
             app:cardBackgroundColor="#FFb119">
 
             <FrameLayout
@@ -101,7 +101,7 @@
             android:layout_column="1"
             app:cardElevation="6dp"
             app:cardCornerRadius="14dp"
-            android:stateListAnimator="@animator/button_hover_scale"
+             
             app:cardBackgroundColor="#9DC0CC">
 
             <FrameLayout
@@ -148,7 +148,7 @@
             android:layout_column="0"
             app:cardElevation="6dp"
             app:cardCornerRadius="14dp"
-            android:stateListAnimator="@animator/button_hover_scale"
+             
             app:cardBackgroundColor="#25a2c0">
 
             <FrameLayout
@@ -195,7 +195,7 @@
             android:layout_column="1"
             app:cardElevation="6dp"
             app:cardCornerRadius="14dp"
-            android:stateListAnimator="@animator/button_hover_scale"
+             
             app:cardBackgroundColor="#4C9C4E">
 
             <FrameLayout
@@ -242,7 +242,7 @@
             android:layout_column="0"
             app:cardElevation="6dp"
             app:cardCornerRadius="14dp"
-            android:stateListAnimator="@animator/button_hover_scale"
+             
             app:cardBackgroundColor="#f4e8d0">
 
             <FrameLayout
@@ -289,7 +289,7 @@
             android:layout_column="1"
             app:cardElevation="6dp"
             app:cardCornerRadius="14dp"
-            android:stateListAnimator="@animator/button_hover_scale"
+             
             app:cardBackgroundColor="#701230">
 
             <FrameLayout
