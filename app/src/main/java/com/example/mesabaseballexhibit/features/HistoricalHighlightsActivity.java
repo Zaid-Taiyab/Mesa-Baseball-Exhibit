@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.mesabaseballexhibit.R;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,8 @@ public class HistoricalHighlightsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player2);
-
+        MaterialButton btnExit = findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(v -> onBackPressed());
         viewPager = findViewById(R.id.viewPager);
         indicatorsContainer = findViewById(R.id.indicatorsContainer);
 

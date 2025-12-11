@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mesabaseballexhibit.core.MuseumDatabaseHelper;
 import com.example.mesabaseballexhibit.R;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.List;
 
@@ -29,6 +30,8 @@ public class TriviaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia);
+        MaterialButton btnExit = findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(v -> onBackPressed());
 
         questionTextView = findViewById(R.id.questionTextView);
         answerOptionsGroup = findViewById(R.id.answerOptionsGroup);

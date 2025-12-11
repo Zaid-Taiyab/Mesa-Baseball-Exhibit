@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import com.example.mesabaseballexhibit.R;
+import com.google.android.material.button.MaterialButton;
 
 public class PlayerActivity extends AppCompatActivity {
     private ViewPager2 viewPager;
@@ -30,7 +31,8 @@ public class PlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
-
+        MaterialButton btnExit = findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(v -> onBackPressed());
         viewPager = findViewById(R.id.viewPager);
         indicatorsContainer = findViewById(R.id.indicatorsContainer);
 
