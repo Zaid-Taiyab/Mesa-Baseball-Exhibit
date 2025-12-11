@@ -1,138 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#800000"
-    android:padding="24dp">
+    android:padding="0dp">
 
-    <TextView
-        android:id="@+id/hofHeading"
+    <!-- Original layout untouched -->
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome to the Cactus League Hall of Fame!\n\nClick on each year below to explore the inductees!\nDiscover the incredible stories of Mesa's baseball legends,\nfrom the 2014 Inaugural Class to the most recent honorees."
-        android:textColor="#d4af37"
-        android:textSize="28sp"
-        android:lineSpacingExtra="6dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center"
-        android:layout_marginBottom="12dp" />
+        android:layout_height="match_parent"
+        android:padding="24dp">
 
-    <GridLayout
-        android:id="@+id/hof_year_selector"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:columnCount="2"
-        android:rowCount="3"
-        android:useDefaultMargins="true"
-        android:alignmentMode="alignMargins"
-        android:gravity="center">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn2014"
-            android:layout_width="0dp"
-            android:layout_height="155dp"
-            android:layout_columnWeight="1"
-            android:padding="16dp"
-            android:text="Class of 2014"
-            android:textColor="#800000"
+        <TextView
+            android:id="@+id/hofHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Cactus League Hall of Fame!\n\nClick on each year below to explore the inductees!\nDiscover the incredible stories of Mesa's baseball legends,\nfrom the 2014 Inaugural Class to the most recent honorees."
+            android:textColor="#ffd700"
             android:textSize="28sp"
-            android:textStyle="bold"
-            app:backgroundTint="#f8d6d1"
-            app:rippleColor="#22000000"
-            app:cornerRadius="24dp"
-            app:elevation="6dp"
-            app:strokeColor="#800000"
-            app:strokeWidth="1dp" />
+            android:lineSpacingExtra="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn2016"
-            android:layout_width="0dp"
-            android:layout_height="155dp"
-            android:layout_columnWeight="1"
-            android:padding="16dp"
-            android:text="Class of 2016"
-            android:textColor="#800000"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            app:backgroundTint="#f8d6d1"
-            app:rippleColor="#22000000"
-            app:cornerRadius="24dp"
-            app:elevation="6dp"
-            app:strokeColor="#800000"
-            app:strokeWidth="1dp" />
+        <GridLayout
+            android:id="@+id/hof_year_selector"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:useDefaultMargins="true"
+            android:alignmentMode="alignMargins"
+            android:gravity="center">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn2017"
-            android:layout_width="0dp"
-            android:layout_height="155dp"
-            android:layout_columnWeight="1"
-            android:padding="16dp"
-            android:text="Class of 2017"
-            android:textColor="#800000"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            app:backgroundTint="#f8d6d1"
-            app:rippleColor="#22000000"
-            app:cornerRadius="24dp"
-            app:elevation="6dp"
-            app:strokeColor="#800000"
-            app:strokeWidth="1dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2014"
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="Class of 2014"
+                android:textColor="#800000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:backgroundTint="#f8d6d1"
+                app:rippleColor="#22000000"
+                app:cornerRadius="24dp"
+                app:elevation="6dp"
+                app:strokeColor="#800000"
+                app:strokeWidth="1dp" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2016"
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="Class of 2016"
+                android:textColor="#800000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:backgroundTint="#f8d6d1"
+                app:rippleColor="#22000000"
+                app:cornerRadius="24dp"
+                app:elevation="6dp"
+                app:strokeColor="#800000"
+                app:strokeWidth="1dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn2018"
-            android:layout_width="0dp"
-            android:layout_height="155dp"
-            android:layout_columnWeight="1"
-            android:padding="16dp"
-            android:text="Class of 2018"
-            android:textColor="#800000"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            app:backgroundTint="#f8d6d1"
-            app:rippleColor="#22000000"
-            app:cornerRadius="24dp"
-            app:elevation="6dp"
-            app:strokeColor="#800000"
-            app:strokeWidth="1dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2017"
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="Class of 2017"
+                android:textColor="#800000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:backgroundTint="#f8d6d1"
+                app:rippleColor="#22000000"
+                app:cornerRadius="24dp"
+                app:elevation="6dp"
+                app:strokeColor="#800000"
+                app:strokeWidth="1dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn2019"
-            android:layout_width="0dp"
-            android:layout_height="155dp"
-            android:layout_columnWeight="1"
-            android:padding="16dp"
-            android:text="Class of 2019"
-            android:textColor="#800000"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            app:backgroundTint="#f8d6d1"
-            app:rippleColor="#22000000"
-            app:cornerRadius="24dp"
-            app:elevation="6dp"
-            app:strokeColor="#800000"
-            app:strokeWidth="1dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2018"
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="Class of 2018"
+                android:textColor="#800000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:backgroundTint="#f8d6d1"
+                app:rippleColor="#22000000"
+                app:cornerRadius="24dp"
+                app:elevation="6dp"
+                app:strokeColor="#800000"
+                app:strokeWidth="1dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn2020"
-            android:layout_width="0dp"
-            android:layout_height="155dp"
-            android:layout_columnWeight="1"
-            android:padding="16dp"
-            android:text="Class of 2020"
-            android:textColor="#800000"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            app:backgroundTint="#f8d6d1"
-            app:rippleColor="#22000000"
-            app:cornerRadius="24dp"
-            app:elevation="6dp"
-            app:strokeColor="#d4af37"
-            app:strokeWidth="1dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2019"
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="Class of 2019"
+                android:textColor="#800000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:backgroundTint="#f8d6d1"
+                app:rippleColor="#22000000"
+                app:cornerRadius="24dp"
+                app:elevation="6dp"
+                app:strokeColor="#800000"
+                app:strokeWidth="1dp" />
 
-</GridLayout>
-</LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2020"
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="Class of 2020"
+                android:textColor="#800000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:backgroundTint="#f8d6d1"
+                app:rippleColor="#22000000"
+                app:cornerRadius="24dp"
+                app:elevation="6dp"
+                app:strokeColor="#ffd700"
+                app:strokeWidth="1dp" />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <!-- Top-right Exit button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExit"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:text="Exit"
+        android:textColor="#000000"
+        android:backgroundTint="#ffd700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"/>
+</FrameLayout>

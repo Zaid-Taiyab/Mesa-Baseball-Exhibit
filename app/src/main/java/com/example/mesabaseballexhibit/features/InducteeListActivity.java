@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mesabaseballexhibit.R;
 import com.example.mesabaseballexhibit.features.InducteeAdapter;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.List;
 
@@ -34,6 +35,8 @@ public class InducteeListActivity extends AppCompatActivity {
         List<com.example.mesabaseballexhibit.features.Inductee> inductees = InducteeData.getInducteesForYear(year);
         recyclerView.setAdapter(new InducteeAdapter(inductees));
 
+        MaterialButton btnExit = findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(v -> onBackPressed());
         // 🔽 Scroll hint fade out
         TextView scrollHint = findViewById(R.id.scrollHintText);
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {

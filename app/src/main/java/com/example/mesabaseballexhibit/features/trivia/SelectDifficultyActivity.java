@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mesabaseballexhibit.R;
+import com.google.android.material.button.MaterialButton;
 
 public class SelectDifficultyActivity extends AppCompatActivity {
 
@@ -19,6 +20,8 @@ public class SelectDifficultyActivity extends AppCompatActivity {
         Button easyButton = findViewById(R.id.easyButton);
         Button mediumButton = findViewById(R.id.mediumButton);
         Button hardButton = findViewById(R.id.hardButton);
+        MaterialButton btnExit = findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(v -> onBackPressed());
 
         easyButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,5 +50,6 @@ public class SelectDifficultyActivity extends AppCompatActivity {
         intent.putExtra("difficulty", difficulty);
         startActivity(intent);
     }
+
 }
 

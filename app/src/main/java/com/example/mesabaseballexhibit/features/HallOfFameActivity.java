@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mesabaseballexhibit.R;
+import com.google.android.material.button.MaterialButton;
 
 public class HallOfFameActivity extends AppCompatActivity {
     @Override
@@ -20,7 +21,8 @@ public class HallOfFameActivity extends AppCompatActivity {
         setButtonListener(R.id.btn2018, 2018);
         setButtonListener(R.id.btn2019, 2019);
         setButtonListener(R.id.btn2020, 2020);
-
+        MaterialButton btnExit = findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(v -> onBackPressed());
     }
 
     private void setButtonListener(int id, int year) {
