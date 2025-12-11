@@ -36,7 +36,7 @@ public class InducteeListActivity extends AppCompatActivity {
         recyclerView.setAdapter(new InducteeAdapter(inductees));
 
         MaterialButton btnExit = findViewById(R.id.btnExit);
-        btnExit.setOnClickListener(v -> onBackPressed());
+        btnExit.setOnClickListener(v -> finish());
         // 🔽 Scroll hint fade out
         TextView scrollHint = findViewById(R.id.scrollHintText);
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {

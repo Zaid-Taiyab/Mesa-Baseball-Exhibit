@@ -1,5 +1,6 @@
 package com.example.mesabaseballexhibit.features;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -9,6 +10,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.mesabaseballexhibit.R;
 import com.example.mesabaseballexhibit.features.players.PlayerImageAdapter;
+import com.google.android.material.button.MaterialButton;
 
 public class TeamListActivity extends AppCompatActivity {
     private ViewPager2 viewPager;
@@ -27,12 +29,14 @@ public class TeamListActivity extends AppCompatActivity {
 
         viewPager = findViewById(R.id.viewPager);
         indicatorsContainer = findViewById(R.id.indicatorsContainer);
-
+        indicatorsContainer.setBackgroundColor(Color.parseColor("#66000000"));
         PlayerImageAdapter adapter = new PlayerImageAdapter(images);
         viewPager.setAdapter(adapter);
 
         setupIndicators();
         setCurrentIndicator(0);
+        MaterialButton btnExit = findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(v -> finish());
 
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
@@ -47,7 +51,7 @@ public class TeamListActivity extends AppCompatActivity {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT);
-        params.setMargins(8, 0, 8, 0);
+        params.setMargins(30, 25, 30, 25);
 
         for (int i = 0; i < indicators.length; i++) {
             indicators[i] = new ImageView(this);

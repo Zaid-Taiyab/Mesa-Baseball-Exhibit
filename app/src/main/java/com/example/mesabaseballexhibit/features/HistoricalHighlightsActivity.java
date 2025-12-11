@@ -24,10 +24,10 @@ public class HistoricalHighlightsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player2);
         MaterialButton btnExit = findViewById(R.id.btnExit);
-        btnExit.setOnClickListener(v -> onBackPressed());
+        btnExit.setOnClickListener(v -> finish());
         viewPager = findViewById(R.id.viewPager);
         indicatorsContainer = findViewById(R.id.indicatorsContainer);
-
+        indicatorsContainer.setBackgroundColor(0x66000000);
         // 1️⃣ Add all facts
         List<Fact> allFacts = new ArrayList<>();
         allFacts.add(new Fact("Satchel Paige (1947)",
@@ -83,7 +83,7 @@ public class HistoricalHighlightsActivity extends AppCompatActivity {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
         );
-        params.setMargins(8, 0, 8, 0);
+        params.setMargins(30, 15, 30, 15);
 
         for (int i = 0; i < indicators.length; i++) {
             indicators[i] = new ImageView(this);

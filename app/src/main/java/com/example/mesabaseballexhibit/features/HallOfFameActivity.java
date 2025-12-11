@@ -22,7 +22,7 @@ public class HallOfFameActivity extends AppCompatActivity {
         setButtonListener(R.id.btn2019, 2019);
         setButtonListener(R.id.btn2020, 2020);
         MaterialButton btnExit = findViewById(R.id.btnExit);
-        btnExit.setOnClickListener(v -> onBackPressed());
+        btnExit.setOnClickListener(v -> finish());
     }
 
     private void setButtonListener(int id, int year) {

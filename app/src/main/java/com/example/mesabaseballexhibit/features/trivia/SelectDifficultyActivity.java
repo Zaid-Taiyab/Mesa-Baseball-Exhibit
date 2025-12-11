@@ -21,7 +21,7 @@ public class SelectDifficultyActivity extends AppCompatActivity {
         Button mediumButton = findViewById(R.id.mediumButton);
         Button hardButton = findViewById(R.id.hardButton);
         MaterialButton btnExit = findViewById(R.id.btnExit);
-        btnExit.setOnClickListener(v -> onBackPressed());
+        btnExit.setOnClickListener(v -> finish());
 
         easyButton.setOnClickListener(new View.OnClickListener() {
             @Override
