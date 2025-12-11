@@ -31,7 +31,8 @@
         <activity android:name=".features.HistoricalHighlightsActivity" />
         <activity android:name=".features.timeline.TimelineActivity"/>
         <activity android:name=".features.HallOfFameActivity"/>
-        <activity android:name=".features.InducteeListActivity">
+        <activity android:name=".features.InducteeListActivity"/>
+        <activity android:name=".CreditsActivity">
         </activity>
 
     </application>
