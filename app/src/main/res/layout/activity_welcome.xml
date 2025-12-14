@@ -9,12 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/mainbackground" />
+        android:src="@drawable/mainbackgroundfinal" />
 
     <!-- Credits Button (Top-left) -->
     <Button
         android:id="@+id/btnCredits"
-        android:layout_width="120dp"
+        android:layout_width="130dp"
         android:layout_height="75dp"
         android:text="Credits"
         android:textSize="16sp"

@@ -52,12 +52,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        restartAnimator(triviaCard, R.animator.button_hover_scale);
-        restartAnimator(playersCard, R.animator.button_hover_scale);
-        restartAnimator(teamsCard, R.animator.button_hover_scale);
-        restartAnimator(highlightsCard, R.animator.button_hover_scale);
-        restartAnimator(timelineCard, R.animator.button_hover_scale);
-        restartAnimator(hallOfFameCard, R.animator.button_hover_scale);
+
     }
 
     private void restartAnimator(CardView view, int animatorRes) {
