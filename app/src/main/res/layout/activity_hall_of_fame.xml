@@ -7,7 +7,6 @@
     android:background="#800000"
     android:padding="0dp">
 
-    <!-- Original layout untouched -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -26,120 +25,172 @@
             android:gravity="center"
             android:layout_marginBottom="12dp" />
 
-        <GridLayout
+        <!-- Switch to LinearLayout rows so buttons share vertical space evenly -->
+        <LinearLayout
             android:id="@+id/hof_year_selector"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:columnCount="2"
-            android:rowCount="3"
-            android:useDefaultMargins="true"
-            android:alignmentMode="alignMargins"
+            android:orientation="vertical"
             android:gravity="center">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn2014"
-                android:layout_width="0dp"
-                android:layout_height="155dp"
-                android:layout_columnWeight="1"
-                android:padding="16dp"
-                android:text="Class of 2014"
-                android:textColor="#800000"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                app:backgroundTint="#f8d6d1"
-                app:rippleColor="#22000000"
-                app:cornerRadius="24dp"
-                app:elevation="6dp"
-                app:strokeColor="#800000"
-                app:strokeWidth="1dp" />
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn2016"
-                android:layout_width="0dp"
-                android:layout_height="155dp"
-                android:layout_columnWeight="1"
-                android:padding="16dp"
-                android:text="Class of 2016"
-                android:textColor="#800000"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                app:backgroundTint="#f8d6d1"
-                app:rippleColor="#22000000"
-                app:cornerRadius="24dp"
-                app:elevation="6dp"
-                app:strokeColor="#800000"
-                app:strokeWidth="1dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn2014"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Class of 2014"
+                    android:textColor="#800000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#f8d6d1"
+                    app:rippleColor="#22000000"
+                    app:cornerRadius="24dp"
+                    app:elevation="6dp"
+                    app:strokeColor="#800000"
+                    app:strokeWidth="1dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn2017"
-                android:layout_width="0dp"
-                android:layout_height="155dp"
-                android:layout_columnWeight="1"
-                android:padding="16dp"
-                android:text="Class of 2017"
-                android:textColor="#800000"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                app:backgroundTint="#f8d6d1"
-                app:rippleColor="#22000000"
-                app:cornerRadius="24dp"
-                app:elevation="6dp"
-                app:strokeColor="#800000"
-                app:strokeWidth="1dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn2015"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Class of 2015"
+                    android:textColor="#800000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#f8d6d1"
+                    app:rippleColor="#22000000"
+                    app:cornerRadius="24dp"
+                    app:elevation="6dp"
+                    app:strokeColor="#800000"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn2018"
-                android:layout_width="0dp"
-                android:layout_height="155dp"
-                android:layout_columnWeight="1"
-                android:padding="16dp"
-                android:text="Class of 2018"
-                android:textColor="#800000"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                app:backgroundTint="#f8d6d1"
-                app:rippleColor="#22000000"
-                app:cornerRadius="24dp"
-                app:elevation="6dp"
-                app:strokeColor="#800000"
-                app:strokeWidth="1dp" />
+            <!-- Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn2019"
-                android:layout_width="0dp"
-                android:layout_height="155dp"
-                android:layout_columnWeight="1"
-                android:padding="16dp"
-                android:text="Class of 2019"
-                android:textColor="#800000"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                app:backgroundTint="#f8d6d1"
-                app:rippleColor="#22000000"
-                app:cornerRadius="24dp"
-                app:elevation="6dp"
-                app:strokeColor="#800000"
-                app:strokeWidth="1dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn2016"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Class of 2016"
+                    android:textColor="#800000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#f8d6d1"
+                    app:rippleColor="#22000000"
+                    app:cornerRadius="24dp"
+                    app:elevation="6dp"
+                    app:strokeColor="#800000"
+                    app:strokeWidth="1dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn2020"
-                android:layout_width="0dp"
-                android:layout_height="155dp"
-                android:layout_columnWeight="1"
-                android:padding="16dp"
-                android:text="Class of 2020"
-                android:textColor="#800000"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                app:backgroundTint="#f8d6d1"
-                app:rippleColor="#22000000"
-                app:cornerRadius="24dp"
-                app:elevation="6dp"
-                app:strokeColor="#ffd700"
-                app:strokeWidth="1dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn2017"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Class of 2017"
+                    android:textColor="#800000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#f8d6d1"
+                    app:rippleColor="#22000000"
+                    app:cornerRadius="24dp"
+                    app:elevation="6dp"
+                    app:strokeColor="#800000"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
 
-        </GridLayout>
+            <!-- Row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn2018"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Class of 2018"
+                    android:textColor="#800000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#f8d6d1"
+                    app:rippleColor="#22000000"
+                    app:cornerRadius="24dp"
+                    app:elevation="6dp"
+                    app:strokeColor="#800000"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn2019"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Class of 2019"
+                    android:textColor="#800000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#f8d6d1"
+                    app:rippleColor="#22000000"
+                    app:cornerRadius="24dp"
+                    app:elevation="6dp"
+                    app:strokeColor="#800000"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+
+            <!-- Row 4 (single centered button) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn2020"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Class of 2020"
+                    android:textColor="#800000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#f8d6d1"
+                    app:rippleColor="#22000000"
+                    app:cornerRadius="24dp"
+                    app:elevation="6dp"
+                    app:strokeColor="#ffd700"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
     <!-- Top-right Exit button -->

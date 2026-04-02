@@ -35,6 +35,32 @@ public class InducteeData {
                     "Arizona State Senator, Tucson, AZ, 1953 - 1964",
                     "Hi Corbett was a Tucson native who is credited with helping to convince Bill Veeck to bring his Cleveland Indians to Southern Arizona for spring training, giving rise to the Cactus League. Corbett was an amateur golfer who organized Tucson's first professional golf tournament, was President of the Texas Baseball eague, and served his community in the Arizona State Senate. The ballpark that played host to the Indi ans (and ultimately the expansion of the Colorado Rockies) was named after him in 1951."));
             }
+        if (year == 2015) {
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.jane_dee_hull,
+                    "Hon. Jane Dee Hull",
+                    "Arizona Governor, 1997 - 2003",
+                    "Former Arizona Governor Jane Dee Hull had the difficult task of leading the charge to create a new funding stream for a variety of uses including Cactus League ballpark renovations and expansions. Her deft leadership and team of committed supporters and politicos helped win voter approval for Maricopa County's Proposition 302 creating the Arizona Sports and Tourism Authority and ultimately funding millions of dollars in baseball facility work since 2000."));
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.ron_travers,
+                    "Hon. Ron Travers",
+                    "Mayor of Peoria, 1985 - 1991",
+                    "While we think of Peoria's current teams, the Seattle Mariners and San Diego Padres, as the only clubs ever to train there, it was the Milwaukee Brewers who years earlier established minor league operations on the former Greenway Sports Complex with the help of an energetic public servant named Ron Travers. Before he was mayor, Travers served on the Board of the Peoria Municipal Development Authority, which sought $1.5 million in bonds to build the fields that opened in April 1978. Ultimately the Brewers left the West Valley, but Travers' efforts helped spark others to work toward construction of baseball's first-ever two-team spring training facility and relocation of the Mariners and Padres to Peoria."));
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.gregg_forwerck,
+                    "Gregg Forwerck",
+                    "Topps Photographer, 1989 - Present",
+                    "When Gregg Forwerck arrived in Arizona in mid-February to begin photographing players on what he calls his \"hit list,\" he affectionately refers to his time in Arizona's Cactus League as \"my prison term in paradise.\" Since 1989, Forwerck has taken pictures for the Topps Chewing Gum Company. At the time of induction, he was in his 15th season of shooting photos during Arizona's Cactus League, and overall, estimates that about 25,000 of his images have appeared on trading cards."));
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.doug_mcwilliams,
+                    "Doug McWilliams",
+                    "Topps Photographer, 1972 - 1994",
+                    "Doug McWilliams hasn't shot photos for the Topps Chewing Gum Co. for many years, but the greatness of his work left an indelible mark. From 1972 to 1994, McWilliams roamed spring training facilities that are now a distant memory - such as Mesa's Rendezvous Park, Yuma and the original Scottsdale Stadium. McWilliams' photography made players look great. After former Oakland A's star pitcher Vida Blue asked McWilliams to shoot some pictures of him for his mother and later postcards to send to his fans in 1971 - Topps liked the photos of Blue so well, company executives called McWilliams and asked him to shoot for them."));
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.ed_mailliard,
+                    "Ed Mailliard",
+                    "Topps Photographer, 1988 - Present",
+                    "For more than 30 years, Ed Mailliard has believed in getting a good vantage point to get \"the shot\" and that's what it took for him to get a job with the Topps Chewing Gum Co. On his days off Mailliard also took pictures for Sporting News, Baseball Digest and Street and Smith's. When he submitted a portfolio of his photos to Topps in 1981, they hired him right away to begin shooting photos for football cards. Mailliard is set to begin his 28th consecutive season of shooting photos of baseball players for Topps during spring training in Arizona. He estimates that about 15,000 of his images have appeared on trading cards."));
+            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.eddie_logan,
+                    "Eddie Logan",
+                    "Clubhouse Manager, NY/SF Giants, 1947 - 1979",
+                    "Eddie Logan spent his entire life taking care of baseball players and their equipment as a clubhouse \"gofer,\" assistant clubhouse manager and finally clubhouse manager for the New York and San Francisco Giants. Included in that nearly sixty years of service were 33 seasons in the Cactus League, where he worked as a one-man show making sure everything was in order for future Hall of Famers and rookies alike as they arrived in Arizona to prepare for each major league season."));
+        }
         if (year == 2016) {
             list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.dell_webb,
                     "Dell Webb",
@@ -75,9 +101,8 @@ public class InducteeData {
         if (year == 2018) {
             list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.img_7,
                     "Frank Robinson",
-                    "Mesa Rancher and Businessman",
-                    "One of the Cactus League's biggest civic boosters, he is credited with bringing the Chicago Cubs to Mesa in 1952 and then bringing them back to Mesa from Scottsdale in 1979. He was the first chairman of the storied Hohokams civic club, created to pursue a spring training baseball team in 1946 and was selected by Governor Rose Mofford to lead her task force to save spring training in the late 1980's."));
-            list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.img_8,
+                    "MLB Hall of Famer, First African American Manager",
+                    "Frank Robinson made his debut with the Cincinnati Reds in 1956 capturing the NL Rookie of the Year award hitting a then rookie record 38 home runs. He is the first and only player to win the MVP award in both leagues; with the Reds in 1961 and the Baltimore Orioles in 1966 when he also captured the AL Triple Crown leading the league with 49 HRs, 122 RBI and a .316 batting average. Towards the end of his 21-year Hall of Fame career Robinson became Major League Baseball's first African American manager while doubling as a designated hitter for the Cleveland Indians in 1975. Robinson managed his former Orioles team from 1988-1991 and was named American League Manager of the Year in 1989. Robinson was presented with the Presidential Medal of Freedom in 2005 and received MLB's Beacon of Life Award in 2008 for embodying the spirit of the civil rights movement. He was elected to the National Baseball Hall of Fame in 1982."));list.add(new com.example.mesabaseballexhibit.features.Inductee(R.drawable.img_8,
                     "Gaylord Perry",
                     "Pitcher, San Francisco Giants, 1962–1971",
                     "North Carolina native Gaylord Perry pitched for eight teams in his 22 year Major League career. His longest stint (10 years) was with his original club, the San Francisco Giants. Debuting in 1962, he had his first 20-win campaign and All-Star Game appearance in 1966. The Giants traded Perry in 1971 to the Indians where he thrived. His 24-win, 1.92 ERA for Cleveland in 1972 won him the A.L. Cy Young Award, an honor he repeated in 1978 for the San Diego Padres -- at age 39. Perry was the first pitcher to win a Cy Young in both leagues. In 1982 he won his 300th game with the Mariners. At the time of his retirement Perry's total of 314 wins ranked 10th all-time and his 3,534 strikeouts were third. He spent 17 of his 22 springs in he Cactus League. Gaylord Perry was elected to the National Baseball Hall of Fame in 1991. "));

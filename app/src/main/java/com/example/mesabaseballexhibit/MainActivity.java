@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         playersCard = findViewById(R.id.playersCard);
         teamsCard = findViewById(R.id.teamsCard);
         highlightsCard = findViewById(R.id.highlightsCard);
-        timelineCard = findViewById(R.id.timelineCard);
         hallOfFameCard = findViewById(R.id.hallOfFameCard);
 
         // Set listeners for each card
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         playersCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PlayerActivity.class)));
         teamsCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TeamListActivity.class)));
         highlightsCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HistoricalHighlightsActivity.class)));
-        timelineCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TimelineActivity.class)));
         hallOfFameCard.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HallOfFameActivity.class)));
 
         // Exit button

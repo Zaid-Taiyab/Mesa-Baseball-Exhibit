@@ -16,6 +16,7 @@ public class HallOfFameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hall_of_fame);
         setButtonListener(R.id.btn2014, 2014);
+        setButtonListener(R.id.btn2015, 2015);
         setButtonListener(R.id.btn2016, 2016);
         setButtonListener(R.id.btn2017, 2017);
         setButtonListener(R.id.btn2018, 2018);

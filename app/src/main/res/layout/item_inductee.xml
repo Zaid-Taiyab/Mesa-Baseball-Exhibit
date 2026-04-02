@@ -1,21 +1,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@drawable/card_bg"
     android:elevation="4dp"
     android:layout_marginBottom="16dp">
 
-    <ImageView
-        android:id="@+id/inducteeImage"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:adjustViewBounds="true"
-        android:background="#f8d6d1"
-        android:contentDescription="Inductee Photo"
-        android:layout_marginBottom="12dp" />
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/inducteeImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="150dp"
+            android:maxHeight="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="#f8d6d1"
+            android:contentDescription="Inductee Photo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/inducteeName"
